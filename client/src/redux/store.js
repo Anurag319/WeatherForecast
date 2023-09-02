@@ -1,11 +1,11 @@
 
-// import {createStore} from 'redux';
+
 import rootReducer from './rootReducer';
 import {configureStore} from '@reduxjs/toolkit'
 import weatherSaga from './saga';
 import createSagaMiddleware from 'redux-saga';
 
-// const store = createStore(rootReducer);
+// Allow to pass value to any where in application, as in weather.js
 const sagaMiddleware = createSagaMiddleware();
 const store = configureStore({
     reducer:rootReducer,

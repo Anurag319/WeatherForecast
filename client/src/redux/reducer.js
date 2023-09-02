@@ -9,7 +9,7 @@ const initialState = {
     error: null
 };
 
-
+// All operations beforing going to store perform here, setting data,loading and error state in all 3 actions
 const weatherReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_WEATHER_REQUEST:
